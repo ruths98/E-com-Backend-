@@ -3,14 +3,6 @@ const routes = require('./routes');
 const Sequelize = require('sequelize');
 const models = require('./models');
 
-const connection = {
-  database:'',
-  user:'',
-  password:'',
-  host:'localhost',
-  dialect:'mysql'
-}
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
