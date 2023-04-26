@@ -1,4 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
+const Tag = require('./Tag')
+const Product = require('./Product')
 
 const sequelize = require('../config/connection');
 
@@ -39,5 +41,7 @@ ProductTag.init(
     modelName: 'product_tag',
   }
 );
+
+
 
 module.exports = ProductTag;

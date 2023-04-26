@@ -26,5 +26,7 @@ Category.init(
   }
 );
 
+
+
 module.exports = Category;
 //when in insomnia shows id, product name. category/1 should show only that category plus the item associated.
