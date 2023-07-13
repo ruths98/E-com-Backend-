@@ -8,7 +8,7 @@ router.get('/', async(req, res) => {
     const tagData = await Tag.findAll({
       include:[{
         model:Product,
-        where: {id: Sequelize.col('Tag.Product_id')}//from chatGPT.
+        
       }]
     })
     res.status(200).json(tagData);
@@ -20,7 +20,11 @@ router.get('/', async(req, res) => {
 router.get('/:id', async(req, res) => {
   try{
     const tagData = await Tag.findByPk(req.params.id, {//finds tag by id and shows related product
-      include: ProductTag
+      include: [
+        {
+          model: Product
+        }
+      ]
     });
 
     if(!tagData) {
