@@ -19,10 +19,10 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    product_tag:{
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+    // product_tag:{
+    //   type: DataTypes.STRING,
+    //   allowNull: false
+    // },
     price:{
       type: DataTypes.DECIMAL(10,2),
       allowNull: false,
