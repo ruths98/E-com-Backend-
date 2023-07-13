@@ -18,7 +18,10 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try{
     const categoryData = await Category.findByPk(req.params.id, {// to find a category with the associated id
-      include: [{model: Category, through: Product}]//make sure this is right to include associated Product(s)
+      include: [
+         {
+          model: Product
+        }]//make sure this is right to include associated Product(s)
     });
     if (!categoryData){//if not an existing category id, error message
       res.status(404).json({message: 'Try an existing category!'});
