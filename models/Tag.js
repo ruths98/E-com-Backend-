@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Category extends Model {}
+class Tag extends Model {}
 
-Category.init(
+Tag.init(
   {
     id:{
       type: DataTypes.INTEGER,
@@ -12,9 +12,8 @@ Category.init(
       primaryKey: true,
       autoIncrement: true
     },
-    category_name:{
-      type: DataTypes.STRING,
-      allowNull: false
+    tag_name:{
+      type: DataTypes.STRING
     }
   },
   {
@@ -22,9 +21,9 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'category',
+    modelName: 'tag',
   }
 );
 
-module.exports = Category;
-//when in insomnia shows id, product name. category/1 should show only that category plus the item associated.
+
+module.exports = Tag;
