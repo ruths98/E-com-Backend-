@@ -9,7 +9,7 @@ In the terminal, you will need to run 'npm i' to install all neccessary npm modu
 
 # Usage
 github: https://github.com/ruths98/E-com-Backend-
-video link:
+video link:https://drive.google.com/file/d/1BXEnfTXe1qlq5gsSC3KqijWO5b8Jr1V1/view
 
 ## Credits
 A huge thank you to AskBCS learning assistants for troubleshooting with routing.
