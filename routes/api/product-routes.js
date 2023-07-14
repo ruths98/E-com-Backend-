@@ -46,7 +46,7 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', async (req, res) => {
-  const { product_name, price, stock, tagId, category_Id } = req.body;
+  const { product_name, price, stock, tag_id, category_Id } = req.body;
   try {
     const newProduct = await Product.create(req.body)
       ((product) => {
